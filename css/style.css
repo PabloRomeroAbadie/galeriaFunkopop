@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  text-align: center;
+  background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+  padding: 40px 0px;
+ color: whitesmoke;
+}
+
+footer{
+    background-color: #252424;
+    padding: 20px 0px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+main{
+    margin: 30px;
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div{
+    margin: 10px;
+    width: 22%;
+}
+
+div img{
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 14px grey;
+}
+
+img:hover{
+    position:relative; 
+    bottom: 3px;
+    right: 3px;
+    /* filter: blur(0px); */
+    filter: opacity(50%);
+    transition: 800ms;
+}
+
+/* media queries */
+/* @media tipo de medio and (condicion) {
+    agrego todos los estilos que quiero cambiar para el dispositivo
+    div{
+        width:80%;
+ } */
+
+ /* dispositivos pequeños */
+ /* tipos de dispositivos: print (soloafectaria cuando quiero imprimir), screen (pantalla), speech (lectura por voz), all (engloba a los 3 anteriores)*/
+ @media all and (min-width: 280px) and (max-width: 767px){
+    div{
+        width: 90%;
+    }
+
+    .titulo{
+        color: blue;
+    }
+ }
+
+ /* dispositivos extra small */
+ @media screen and (max-width: 279px) {
+     .titulo{
+         color: chartreuse;
+     }
+ }
+
+ /* dispositivos medianos: tablets */
+@media all and (min-width:768px) and (max-width:991px){
+    div{
+        width: 47%;
+    }
+}
+
+/* dispositivosgrandes */
+@media all and (min-widht: 992px){
+    /* agrego los estilos para dispositivos grandes */
+}
